@@ -9,6 +9,11 @@
         Get started in no time with the following amazing modules:
       </p>
     </div>
+    <div v-for="path in paths" :key="path">
+      <NuxtLink :to="path">
+        {{ path }}
+      </NuxtLink>
+    </div>
     <div class="cards">
       <div class="card prisma__card">
         <div class="card__body">
@@ -97,6 +102,10 @@
     </div>
   </div>
 </template>
+<script setup>
+const router = useRouter()
+const paths = router.options.routes.map(route => route.path)
+</script>
 
 <style scoped>
   * {
