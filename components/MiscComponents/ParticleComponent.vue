@@ -3,7 +3,7 @@
   <Particles
     id="tsparticles"
     :particlesInit="particlesInit"
-   
+
     :options="{
       fullScreen: { enable: false, zIndex: 0 },
       fpsLimit: 60,
@@ -80,13 +80,12 @@
       detectRetina: true,
     }"
   />
-  
+
 </template>
 
 <script setup>
 import { loadFull } from "tsparticles";
-import { useRoute } from "vue-router";
-import { logger } from "../../utils/Logger";
+
 
 const particlesInit = async (engine) => {
   await loadFull(engine);

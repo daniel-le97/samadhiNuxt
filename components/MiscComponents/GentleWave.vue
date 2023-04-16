@@ -6,10 +6,10 @@
      preserveAspectRatio="none">
  <defs>
  <path id="gentle-wave"
- d="M-160 44c30 0 
+ d="M-160 44c30 0
     58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
+    58 18 88 18
+    58-18 88-18
     58 18 88 18
     v44h-352z" />
   </defs>
@@ -23,17 +23,14 @@
    <use xlink:href="#gentle-wave" x="50" y="9" fill="#f9ad8a"/>
    </g>
     <g class="parallax4">
-   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>
   </g>
 </svg>
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
+
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../../AppState.js";
-import { logger } from "../../utils/Logger.js"
-import Pop from "../../utils/Pop.js";
 
 export default {
 props:{
@@ -41,7 +38,7 @@ props:{
        },
   setup(props) {
     const editable = ref({});
-    
+
     onMounted(() => {
 
     });
@@ -64,7 +61,7 @@ props:{
   max-height: 60px;
   margin: 0;
   z-index:5;
-  bottom:-20px; 
+  bottom:-20px;
   position:absolute;
   left:0px;
   float:left;

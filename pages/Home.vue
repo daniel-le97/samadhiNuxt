@@ -6,7 +6,7 @@
           <div class=" p-0">
             <div class="position-relative px-0">
               <div class="tsparticles">
-                <!-- <ParticleComponent /> -->
+                <ParticleComponent />
               </div>
               <div
                 class="hero-image container-fluid d-flex flex-column justify-content-center align-items-center"
@@ -29,7 +29,7 @@
                   </TransitionSlide>
                 </div>
               </div>
-              <!-- <GentleWave /> -->
+              <GentleWave />
             </div>
           </div>
         </div>
@@ -65,11 +65,47 @@
 </template>
 
 <script setup>
+import ParticleComponent from "~/components/MiscComponents/ParticleComponent.vue";
+import  "~/assets/scss/main.scss";
+import GentleWave from "~/components/MiscComponents/GentleWave.vue";
 
 </script>
 
 <style scoped lang="scss">
-.hello-world{
-  color: red;
+.about-section {
+  margin-top: 10rem;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 }
+.hero-image {
+
+  height: 100vh;
+  width: 100vw;
+  /* always scale the image to the appropriate size of your screen */
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-position: center;
+  /* keeps the image fixed while scrolling , neat effect. */
+  background-attachment: fixed;
+  //when screen is 768px OR LESS
+   @media only screen and (max-width: 768px){
+ background-attachment: scroll;
+
+  }
+}
+
+//when screen is 768px OR LESS
+@media only screen and (max-width: 768px) {
+  .logo-image {
+    width: 75%;
+  }
+
+  .team-section-title {
+    margin-top: 140px;
+  }
+}
+
+
 </style>
