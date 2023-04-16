@@ -56,7 +56,7 @@ props:{
 
 .editorial {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   max-height: 60px;
   margin: 0;

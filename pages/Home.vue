@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="Hero-Section">
-      <div class=" container">
+      <div class=" container ">
         <div class="">
           <div class=" p-0">
             <div class="relative px-0">
@@ -36,11 +36,11 @@
       </div>
     </section>
 
-    <section id="Call-To-Action-Section" class="my-5">
+    <section id="Call-To-Action-Section" class="my-5 flex justify-center">
       <CallToAction />
     </section>
 
-    <section id="About-Katie-Section" class="bg-pink about-section">
+    <section id="About-Katie-Section" class="bg-pink about-section flex justify-center">
       <AboutSection />
     </section>
 

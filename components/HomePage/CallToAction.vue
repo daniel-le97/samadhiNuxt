@@ -6,7 +6,7 @@
 
         <h1
 
-          class="display-1 font-1 underline text-center text-dark mt-md-5"
+          class="text-5xl font-1   text-center text-dark md:mt-5"
         >
           Welcome Beautiful Soul
         </h1>
@@ -14,33 +14,33 @@
 
         <h2
 
-          class="display-6 font-2 underline text-lightPink darken-20 mb-4"
+          class="text-4xl font-2 underline text-lightPink darken-20 mb-4"
         >
           Our Core Belief
         </h2>
       </div>
       <div class="col-md-8 text-center">
-        <p  class="fs-4 px-md-5">
+        <p  class="text-xl px-md-5">
           Is that we all want to be at peace with who we truly are, and that at
           every moment is an opportunity where we can be authentic with
           ourselves in everyday life.
         </p>
 
-        <p  class="fs-4 px-md-5">
+        <p  class="text-xl px-md-5">
           <b> SamadhiYogaIdaho </b> is a holistic approach to wellness using
           pranayama, asana, journaling, and meditation practices to increase our
           knowledge of self, life, mobility, and to help every person recognize
           their worthiness, beauty, and uniqueness.
         </p>
-        <p class="fs-4" >
+        <p class="text-xl" >
           Escape with us and learn how to see yourself without judgment
         </p>
         <RetreatButton />
-        <p>
+        <p class="mt-3">
           <a
-           
+
             href="#newsletter"
-            class="btn bg-warning selectable fs-3 px-4"
+            class="btn bg-warning selectable px-4  "
           >
             Begin Your Journey</a
           >
@@ -49,7 +49,7 @@
     </div>
     <hr class="my-5" />
 
-    <div class="row">
+    <div class=" flex-row flex">
       <CTACard />
     </div>
   </div>
