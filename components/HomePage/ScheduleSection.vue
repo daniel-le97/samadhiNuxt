@@ -3,7 +3,7 @@
     <div class="row position-relative" >
       <div class="col-md-12 text-center">
         <h1
-          v-motion-slide-visible-once-bottom
+
           :delay="300"
           class="display-2 font-1 underline"
         >
@@ -14,7 +14,7 @@
 
       <div class="col-md-8 d-flex align-items-center justify-content-center">
         <div
-          v-motion-slide-visible-once-bottom
+        
           :delay="300"
           class="card border-0 elevation-6"
         >

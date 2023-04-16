@@ -20,7 +20,7 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import { useMotion } from "@vueuse/motion";
+
 import { useRoute } from "vue-router";
 
 export default defineComponent({
@@ -30,36 +30,36 @@ export default defineComponent({
     const route = useRoute();
     const refs = [head];
 
-    refs.forEach((ref, index) => {
-      const { variant } = useMotion(ref, {
-        initial: {
-          y: 100,
-          opacity: 0,
-        },
-        enter: {
-          y: 0,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 350,
-            damping: 20,
-            delay: index * 50,
-            onComplete: () => {
-              variant.value = "levitate";
-            },
-          },
-        },
-        levitate: {
-          y: 15,
-          transition: {
-            duration: 2000,
-            repeat: Infinity,
-            ease: "easeInOut",
-            repeatType: "mirror",
-          },
-        },
-      });
-    });
+    // refs.forEach((ref, index) => {
+    //   const { variant } = useMotion(ref, {
+    //     initial: {
+    //       y: 100,
+    //       opacity: 0,
+    //     },
+    //     enter: {
+    //       y: 0,
+    //       opacity: 1,
+    //       transition: {
+    //         type: "spring",
+    //         stiffness: 350,
+    //         damping: 20,
+    //         delay: index * 50,
+    //         onComplete: () => {
+    //           variant.value = "levitate";
+    //         },
+    //       },
+    //     },
+    //     levitate: {
+    //       y: 15,
+    //       transition: {
+    //         duration: 2000,
+    //         repeat: Infinity,
+    //         ease: "easeInOut",
+    //         repeatType: "mirror",
+    //       },
+    //     },
+    //   });
+    // });
 
     return {
       head,

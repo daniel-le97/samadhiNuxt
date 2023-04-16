@@ -2,7 +2,7 @@
   <div>
     <div class="container position-relative py-5">
       <div
-        v-motion-slide-visible-once-bottom
+
         :delay="300"
         class="floating-image-1 d-none d-md-block"
       >
@@ -13,14 +13,14 @@
           class="col-md-8 team-section-title d-flex d-md-block flex-column align-items-sm-center justify-content-sm-center"
         >
           <h1
-            v-motion-slide-visible-once-bottom
+
             :delay="300"
             class="display-2 font-1 underline text-center text-md-start text-dark"
           >
             Katie Alverson
           </h1>
           <h2
-            v-motion-slide-visible-once-bottom
+
             :delay="1200"
             class="display-6 font-2 underline text-lightPink darken-20 text-center text-md-start"
           >
@@ -28,7 +28,7 @@
           </h2>
 
           <h2
-            v-motion-slide-visible-once-bottom
+
             :delay="900"
             class="display-6 font-2 underline text-lightPink darken-20 text-center text-md-start me-md-2"
           >
@@ -36,7 +36,7 @@
           </h2>
 
           <h2
-            v-motion-slide-visible-once-bottom
+
             :delay="300"
             class="display-6 font-2 underline text-lightPink darken-20 text-center text-md-start"
           >
@@ -50,7 +50,7 @@
       <div class="row gy-5 justify-content-center">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div
-            v-motion-slide-visible-once-bottom
+
             :delay="300"
             class="card framed border-0"
           >
@@ -65,7 +65,7 @@
         </div>
         <div class="col-md-6">
           <p
-            v-motion-slide-visible-once-bottom
+
             :delay="300"
             class="text-start fs-4 font-2"
           >
@@ -85,12 +85,12 @@
             hope to see you on the mat soon!
           </p>
 
-      
+
         </div>
       </div>
       <div class="d-flex justify-content-center justify-content-md-end">
         <router-link
-          v-motion-slide-visible-once-bottom
+       
           :delay="300"
           :to="{ name: 'About' }"
           class="my-3"

@@ -1,8 +1,8 @@
 <template>
   <nav
-    class="navbar navbar-expand-md navbar-dark text-dark px-3 font-2 nav py-md-2 text-center  text-md-start"
+    class="navbar navbar-expand-md navbar-dark text-dark px-3 font-2 nav py-md-2 text-center  md:text-start"
   >
-    <div class="  d-md-flex mx-auto justify-content-center">
+    <div class=" md:flex   justify-center ">
       <p class="mb-0">
         <button
           class="navbar-toggler btn-dark text-dark bg-dark"
@@ -21,8 +21,7 @@
           <li>
             <router-link
               :to="{ name: 'Home' }"
-              v-motion-slide-bottom
-              :delay="300"
+
               class="nav-link"
               title="home"
             >
@@ -32,15 +31,14 @@
           <li class="">
             <router-link
               :to="{ name: 'About' }"
-              v-motion-slide-bottom
-              :delay="300"
+
               class="nav-link"
               title="about"
             >
               About
             </router-link>
           </li>
-          <li>
+          <!-- <li>
             <router-link
               :to="{ name: 'Retreats' }"
               v-motion-slide-bottom
@@ -60,11 +58,11 @@
             >
               Services
             </router-link>
-          </li>
+          </li> -->
           <li
             class="mx-5 d-none d-md-flex justify-content-center align-items-center"
           >
-            <div v-motion-fade :delay="1000" class="text-center">
+            <div  class="text-center">
               <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
                 <img
                   src="../assets/img/logo.png"
@@ -75,7 +73,7 @@
               </router-link>
             </div>
           </li>
-          <li>
+          <!-- <li>
             <router-link
               :to="{ name: 'Events' }"
               v-motion-slide-bottom
@@ -85,13 +83,12 @@
             >
               Events
             </router-link>
-          </li>
+          </li> -->
           <li>
             <a
               href="https://blogs.samadhiyogaidaho.com/"
               target="_blank"
-              v-motion-slide-bottom
-              :delay="300"
+
               class="nav-link"
               title="blog"
             >
@@ -99,7 +96,7 @@
             </a>
           </li>
 
-          <li>
+          <!-- <li>
             <router-link
               :to="{ name: 'FAQ' }"
               v-motion-slide-bottom
@@ -120,7 +117,7 @@
             >
               Connect
             </router-link>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -129,7 +126,7 @@
 
 <script>
 import { useRoute } from "vue-router";
-import Login from "./MiscComponents/Login.vue";
+
 export default {
   setup() {
     const route = useRoute();
@@ -137,7 +134,7 @@ export default {
       route,
     };
   },
-  components: { Login },
+
 };
 </script>
 
@@ -183,13 +180,13 @@ export default {
 .navbar-nav{
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px){
-    
+
 li{
   justify-content: center;
   display: flex;
 }
- 
- 
+
+
   }
 }
 .navbar-nav .router-link-exact-active {

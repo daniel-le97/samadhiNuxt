@@ -41,8 +41,7 @@
 
 <script>
 import { onMounted, ref, watchEffect } from 'vue'
-import { newsLetterService } from '../services/NewsLetterService.js'
-import Pop from '../utils/Pop.js'
+
 
 export default {
   props: {},
@@ -56,7 +55,7 @@ export default {
       editable,
       async handleSubmit () {
         try {
-          await newsLetterService.addNewsLetterSubscription(editable.value)
+          // await newsLetterService.addNewsLetterSubscription(editable.value)
           Pop.success('Thanks for Subscribing!')
         } catch (error) {
           Pop.error(error, '[addingNewsLetterSubscription]')

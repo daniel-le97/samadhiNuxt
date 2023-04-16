@@ -38,11 +38,7 @@ s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../../AppState.js";
-import { logger } from "../../utils/Logger.js"
-import Pop from "../../utils/Pop.js";
 
 export default {
 props:{
@@ -50,7 +46,7 @@ props:{
        },
   setup(props) {
     const editable = ref({});
-    
+
     onMounted(() => {
 
     });
@@ -66,7 +62,7 @@ props:{
 <style lang="scss" scoped>
 .row{
   width:100%;
-  
+
   padding:0;
   margin:0;
   display: flex;

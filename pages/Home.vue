@@ -4,22 +4,22 @@
       <div class=" container">
         <div class="">
           <div class=" p-0">
-            <div class="position-relative px-0">
+            <div class="relative px-0">
               <div class="tsparticles">
-                <ParticleComponent />
+                <!-- <ParticleComponent /> -->
               </div>
               <div
-                class="hero-image container-fluid d-flex flex-column justify-content-center align-items-center"
+                class="hero-image flex justify-center items-center   flex-column "
               >
                 <div style="margin-top: 80px" class="text-shadow container">
                   <TransitionSlide group mode="in-out" :delay="100">
                     <h1
-                      class="display-2 text-light font-1 text-center"
+                      class="  text-8xl  text-light font-1 text-center"
                     >
                       SAMADHI YOGA IDAHO
                     </h1>
                     <h5
-                      class="fs-2 font-2 text-light text-uppercase text-center"
+                      class="text-4xl font-2 text-light uppercase text-center"
                     >
                       <br>
                       Become aware of your capacity to create <br>
@@ -35,7 +35,7 @@
         </div>
       </div>
     </section>
-    <!--
+
     <section id="Call-To-Action-Section" class="my-5">
       <CallToAction />
     </section>
@@ -44,7 +44,7 @@
       <AboutSection />
     </section>
 
-    <section>
+    <!-- <section>
       <ScheduleSection />
     </section>
     <section id="Retreat-Section">
@@ -68,6 +68,9 @@
 import ParticleComponent from "~/components/MiscComponents/ParticleComponent.vue";
 import  "~/assets/scss/main.scss";
 import GentleWave from "~/components/MiscComponents/GentleWave.vue";
+import CallToAction from "~/components/HomePage/CallToAction.vue";
+import AboutSection from "~/components/HomePage/AboutSection.vue";
+import ScheduleSection from "~/components/HomePage/ScheduleSection.vue";
 
 </script>
 
