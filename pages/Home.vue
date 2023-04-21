@@ -6,7 +6,7 @@
           <div class=" p-0">
             <div class="relative px-0">
               <div class="tsparticles">
-                <!-- <ParticleComponent /> -->
+                <ParticleComponent />
               </div>
               <div
                 class="hero-image flex justify-center items-center   flex-column "
@@ -47,6 +47,9 @@
     <!-- <section>
       <ScheduleSection />
     </section>
+
+
+    
     <section id="Retreat-Section">
       <RetreatAndEvents />
     </section>

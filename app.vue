@@ -1,12 +1,12 @@
 <template>
   <div>
-   <!-- <Navbar id="nav" /> -->
+   <Navbar id="nav" />
     <NuxtPage />
   </div>
 </template>
 
 
-<!-- <script>
+<script >
 import { computed, onMounted, watchEffect } from "vue";
 
 import { AppState } from "./AppState";
@@ -67,7 +67,7 @@ export default {
     ActiveImage,
 },
 };
-</script> -->
+</script>
 <style lang="scss">
 #nav {
   transition: all 0.5s ease;

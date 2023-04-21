@@ -10,12 +10,12 @@
       </div>
       <div class="row">
         <div
-          class="col-md-8 team-section-title d-flex d-md-block flex-column align-items-sm-center justify-content-sm-center"
+          class="md:w-2/3 team-section-title flex md:block  flex-col  sm:items-center sm:justify-center "
         >
           <h1
 
             :delay="300"
-            class="display-2 font-1 underline text-center text-md-start text-dark"
+            class="text-4xl font-1 underline text-center text-md-start text-dark"
           >
             Katie Alverson
           </h1>
@@ -47,8 +47,8 @@
     </div>
 
     <div class="container">
-      <div class="row gy-5 justify-content-center">
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <div class=" flex   justify-center">
+        <div class="md:w-1/2 flex justify-center items-center ">
           <div
 
             :delay="300"
@@ -63,11 +63,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="md:w-1/2">
           <p
 
             :delay="300"
-            class="text-start fs-4 font-2"
+            class="text-start  font-2 text-xl"
           >
             Hi there! I'm Katie, and I absolutely love to get to share the
             beauty and peace of yoga with others. I believe that yoga has the
@@ -88,14 +88,14 @@
 
         </div>
       </div>
-      <div class="d-flex justify-content-center justify-content-md-end">
+      <div class="  flex justify-center md:justify-end  ">
         <router-link
-       
+
           :delay="300"
           :to="{ name: 'About' }"
           class="my-3"
         >
-          <button class="btn btn-dark font-2 fs-3">
+          <button class="btn btn-dark font-2 fs-3 text-lg ">
             Learn more about Katie
           </button>
         </router-link>

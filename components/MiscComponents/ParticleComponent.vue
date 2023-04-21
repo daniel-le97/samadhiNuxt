@@ -88,8 +88,10 @@ import { loadFull } from "tsparticles";
 
 
 const particlesInit = async (engine) => {
+  console.log('hi');
   await loadFull(engine);
 };
+
 
 // const particlesLoaded = async (container) => {
 //   logger.log("Particles container loaded", container);

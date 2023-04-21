@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar navbar-expand-md navbar-dark text-dark px-3 font-2 nav py-md-2 text-center  md:text-start"
+    class="navbar navbar-expand-md navbar-dark text-dark px-3 font-2 nav py-md-2 text-center  md:text-start fixed top-0 z-50 w-full"
   >
     <div class=" md:flex   justify-center ">
       <p class="mb-0">
@@ -16,8 +16,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </p>
-      <div class="collapse navbar-collapse  " id="navbarText">
-        <ul class="navbar-nav me-auto ">
+      <div class=" navbar-collapse  " id="navbarText">
+        <ul class="navbar-nav me-auto  flex">
           <li>
             <router-link
               :to="{ name: 'Home' }"
@@ -60,14 +60,14 @@
             </router-link>
           </li> -->
           <li
-            class="mx-5 d-none d-md-flex justify-content-center align-items-center"
+            class="mx-5     hidden md:flex md:justify-center md:items-center "
           >
             <div  class="text-center">
               <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
                 <img
                   src="../assets/img/logo.png"
                   alt=""
-                  class="rounded-pill elevation-orange logo-image"
+                  class=" rounded-full elevation-orange logo-image"
                   title="home"
                 />
               </router-link>
