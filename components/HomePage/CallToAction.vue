@@ -8,7 +8,7 @@
 
           class="text-5xl font-1   text-center text-dark md:mt-5"
         >
-          Welcome Beautiful Soul
+          Welcome Beautiful Soul 
         </h1>
         <br />
 

@@ -33,16 +33,10 @@
 import { onMounted, ref, watchEffect } from "vue";
 
 export default {
-props:{
 
-       },
-  setup(props) {
+  setup() {
     const editable = ref({});
 
-    onMounted(() => {
-
-    });
-    watchEffect(() => {});
 
     return {
       editable,
